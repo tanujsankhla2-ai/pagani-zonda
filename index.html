@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botto | Artisan Luxury Ice Cream</title>
+    <meta name="description" content="Indulge in pure luxury with Botto's artisan ice cream. Crafted with premium ingredients, our intensely flavorful and undeniably creamy dessert offers a taste of true indulgence.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">BOTTO</a>
+            <div class="nav-links">
+                <a href="#about">Our Story</a>
+                <a href="#flavors">Flavors</a>
+                <a href="#craft">Craftsmanship</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <a href="#order" class="btn btn-outline nav-cta">Order Now</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <iconify-icon icon="lucide:menu" width="24"></iconify-icon>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="#about" class="mobile-link">Our Story</a>
+            <a href="#flavors" class="mobile-link">Flavors</a>
+            <a href="#craft" class="mobile-link">Craftsmanship</a>
+            <a href="#reviews" class="mobile-link">Reviews</a>
+            <a href="#order" class="btn btn-primary mobile-cta">Order Now</a>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <!-- Image sequence slideshow — 4 images, seamless crossfade loop -->
+            <div class="hero-slideshow" aria-hidden="true">
+                <div class="hero-slide hero-slide--1">
+                    <img src="images/hero.png" alt="" fetchpriority="high">
+                </div>
+                <div class="hero-slide hero-slide--2">
+                    <img src="images/choco.png" alt="" loading="lazy">
+                </div>
+                <div class="hero-slide hero-slide--3">
+                    <img src="images/vanilla.png" alt="" loading="lazy">
+                </div>
+                <div class="hero-slide hero-slide--4">
+                    <img src="images/berry.png" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="badge" data-aos="fade-up">Limited Batch Available</span>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                Taste Pure <br><span class="text-gold">Indulgence.</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                Masterfully crafted artisan ice cream. Rich, creamy, and undeniably luxurious. Satisfy your deepest cravings.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="#flavors" class="btn btn-primary btn-glow">Taste Luxury</a>
+                <a href="#about" class="btn btn-outline">Explore Craft</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <iconify-icon icon="lucide:chevron-down" width="20"></iconify-icon>
+        </div>
+    </section>
+
+    <!-- Marquee Text -->
+    <div class="marquee-wrapper">
+        <div class="marquee">
+            <span class="marquee-text">ARTISAN CRAFTED ♦ PREMIUM INGREDIENTS ♦ PURE INDULGENCE ♦ SMALL BATCH ♦ ARTISAN CRAFTED ♦ PREMIUM INGREDIENTS ♦ PURE INDULGENCE ♦ SMALL BATCH ♦ </span>
+            <span class="marquee-text">ARTISAN CRAFTED ♦ PREMIUM INGREDIENTS ♦ PURE INDULGENCE ♦ SMALL BATCH ♦ ARTISAN CRAFTED ♦ PREMIUM INGREDIENTS ♦ PURE INDULGENCE ♦ SMALL BATCH ♦ </span>
+        </div>
+    </div>
+
+    <!-- 3. Features / Craftsmanship -->
+    <section class="features section-padding" id="craft">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">The Art of <span class="text-gold">Perfection</span></h2>
+                <p class="section-desc">We don't just make ice cream. We craft experiences.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <iconify-icon icon="lucide:leaf"></iconify-icon>
+                    </div>
+                    <h3>Pure Ingredients</h3>
+                    <p>Sourced from the finest farms globally. No artificial flavors, ever.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <iconify-icon icon="lucide:droplets"></iconify-icon>
+                    </div>
+                    <h3>Unmatched Creaminess</h3>
+                    <p>A proprietary slow-churn process for an ultra-dense, velvety texture.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <iconify-icon icon="lucide:sparkles"></iconify-icon>
+                    </div>
+                    <h3>Handmade Daily</h3>
+                    <p>Small batches crafted by master artisans to ensure ultimate freshness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. About / Story -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/choco.png" alt="Artisan Ice Cream Crafting" loading="lazy">
+                    <div class="glass-float">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Natural</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="subheading">Our Passion</span>
+                    <h2 class="section-title">A Journey of <br><span class="text-gold">Flavor & Texture.</span></h2>
+                    <p class="mb-4">Botto was born from an obsession with the perfect scoop. We spent years refining our recipe, obsessively sourcing the richest Madagascar vanilla, the darkest Belgian chocolate, and the freshest berries.</p>
+                    <p>Every pint is a testament to what happens when you refuse to compromise on quality. It's not just dessert; it's a momentary escape into luxury.</p>
+                    <div class="signature">
+                        <p class="text-gold mt-4" style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.5rem;">The Botto Founders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Product / Flavors Showcase -->
+    <section class="products section-padding" id="flavors">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Curated <span class="text-gold">Collections</span></h2>
+                <p class="section-desc">Discover our masterfully crafted flavor profiles.</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/choco.png" alt="Midnight Truffle Chocolate" loading="lazy" class="product-img">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Midnight Truffle</h3>
+                        <p>Rich, dark 72% single-origin cacao infused with velvety artisan cream.</p>
+                        <div class="product-footer">
+                            <span class="price">$14.00</span>
+                            <button class="btn btn-sm btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/vanilla.png" alt="Gold Reserve Vanilla" loading="lazy" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gold Reserve Vanilla</h3>
+                        <p>Madagascar vanilla beans perfectly balanced with a subtle caramelized sugar swirl.</p>
+                        <div class="product-footer">
+                            <span class="price">$14.00</span>
+                            <button class="btn btn-sm btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/berry.png" alt="Velvet Berry Eclipse" loading="lazy" class="product-img">
+                        <div class="product-badge">Seasonal</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Velvet Berry Eclipse</h3>
+                        <p>Deep, luscious forest berries slow-reduced into a rich, tart, glossy sorbet.</p>
+                        <div class="product-footer">
+                            <span class="price">$15.00</span>
+                            <button class="btn btn-sm btn-outline">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Why Choose Us -->
+    <section class="why-us section-padding">
+        <div class="container">
+            <div class="why-wrapper">
+                <div class="why-content">
+                    <h2 class="section-title">The Botto <span class="text-gold">Difference</span></h2>
+                    <ul class="why-list">
+                        <li>
+                            <iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon>
+                            <span><strong>Zero Air Whipped In:</strong> We don't pump our ice cream with air. You pay for pure, dense dessert.</span>
+                        </li>
+                        <li>
+                            <iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon>
+                            <span><strong>Ethically Sourced:</strong> Fair-trade cocoa, sustainably harvested vanilla, and local dairy.</span>
+                        </li>
+                        <li>
+                            <iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon>
+                            <span><strong>Cold-Shipped Overnight:</strong> Delivered to your door frozen solid on dry ice, anywhere in the country.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-stats">
+                    <div class="stat-box">
+                        <h4 class="stat-number">50k+</h4>
+                        <p>Pints Delivered</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4 class="stat-number">4.9/5</h4>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Testimonials (Social Proof) -->
+    <section class="testimonials section-padding" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">What They <span class="text-gold">Say</span></h2>
+                <p class="section-desc">Don't just take our word for it.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                    </div>
+                    <p class="review-text">"Absolutely mind-blowing. The Midnight Truffle is so dense and rich, it ruins all other ice cream for you. Highly recommended."</p>
+                    <div class="reviewer">
+                        <div class="avatar">ER</div>
+                        <div class="info">
+                            <h4>Eleanor R.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                    </div>
+                    <p class="review-text">"The packaging alone screams luxury, but the taste? Out of this world. The Gold Reserve Vanilla is the best I've ever had."</p>
+                    <div class="reviewer">
+                        <div class="avatar">JM</div>
+                        <div class="info">
+                            <h4>James M.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-filled"></iconify-icon>
+                        <iconify-icon icon="lucide:star" class="star-half"></iconify-icon>
+                    </div>
+                    <p class="review-text">"I ordered this for a dinner party and my guests couldn't stop talking about it. The velvety texture is unmatched."</p>
+                    <div class="reviewer">
+                        <div class="avatar">ST</div>
+                        <div class="info">
+                            <h4>Sarah T.</h4>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FAQ -->
+    <section class="faq section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Common <span class="text-gold">Questions</span></h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How is the ice cream shipped?</h3>
+                        <iconify-icon icon="lucide:plus" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We ship our ice cream in custom-insulated eco-friendly coolers packed with dry ice. It is guaranteed to arrive at your doorstep frozen solid, no matter where you are in the lower 48 states.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your ingredients organic?</h3>
+                        <iconify-icon icon="lucide:plus" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We prioritize quality and flavor above all. While a vast majority of our ingredients are organic, we sometimes partner with small heritage farms that practice sustainable agriculture but may not have official organic certification.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer vegan or dairy-free options?</h3>
+                        <iconify-icon icon="lucide:plus" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Our Velvet Berry Eclipse is a naturally dairy-free sorbet, and we occasionally release limited-batch plant-based alternatives crafted with cashew and coconut cream.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it last in the freezer?</h3>
+                        <iconify-icon icon="lucide:plus" class="faq-icon"></iconify-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For the optimal creamy texture and flavor experience, we recommend enjoying Botto within 45 days of delivery. However, it will keep safely in airtight conditions for up to 3 months.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CTA Banner + Newsletter -->
+    <section class="cta-section section-padding" id="order">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Experience the <span class="text-gold">Extraordinary</span></h2>
+                    <p>Join the inner circle and receive 15% off your first luxury tasting box.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary btn-glow">Unlock Offer</button>
+                    </form>
+                    <p class="cta-urgency">Limited batch releasing today. Don't miss out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">BOTTO</a>
+                    <p class="footer-desc">Redefining dessert. Masterfully crafted, luxuriously dense, artisan ice cream.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="#" aria-label="Twitter"><iconify-icon icon="lucide:twitter"></iconify-icon></a>
+                        <a href="#" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">All Flavors</a></li>
+                        <li><a href="#">Limited Editions</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Corporate Gifting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Ingredients</a></li>
+                        <li><a href="#">Journal</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Details</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Botto Artisan Foods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
